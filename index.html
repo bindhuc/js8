@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>String Methods</h2>
+    <ol>
+        <li>length</li>
+        <li>charAt</li>
+        <li>indexOf</li>
+        <li>split</li>
+        <li>trim</li>
+        <li>string reverse</li>
+        <li>join</li>
+        <li>slice</li>
+        <li>concatenation</li>
+        <li>replace</li>
+        <li>replaceAll</li>
+        <li>toUppercase</li>
+        <li>toLowercase</li>
+    </ol>
+    <hr>
+    <h3>length</h3>
+    <p>to find length of string</p>
+    <pre>
+    let str1="abc"
+const res1=str1.length
+console.log(str1.length)
+</pre>
+    <hr>
+    <h3>charAt</h3>
+    <p> if we want to find the characters of string with the help
+        of the indexes we will use charAt</p>
+    <pre>
+            let str2="waefgsrfdgnb"
+        //   01234567891011
+let res2=str2.charAt(5)
+console.log(res2)
+        </pre>
+        <hr>
+    <h3>indexOf</h3>
+    <p>with counting spaces we can find the alphabet place in numbers</p>
+    <pre>
+    let str3="asdg xfc"
+    //        01234567
+    let res3=str3.indexOf("g")
+    console.log(3)
+</pre>
+<hr>
+    <h3>split</h3>
+    <p>used to convert string to an aray,it returns the new
+        array but does not change the original array</p>
+    <pre>
+            let str4="bidhu"
+var res4=str4.split("")
+console.log(res4);
+console.log(str4);
+        </pre>
+        <hr>
+    <h3>string reverse</h3>
+    <p>first we need to split it to reverse</p>
+    <pre>
+        let str5="bindhu"
+var res5=str5.split("").reverse();
+console.log(res5);
+    </pre>
+    <hr>
+    <h3>join</h3>
+    <p>it will convert an array into string</p>
+    <p>first split then reverse then join</p>
+    <pre>
+        let str6="bindhu"
+var res6=str6.split("").reverse().join("");
+console.log(res6);
+    </pre>
+    <hr>
+    <h3>Trim</h3>
+    <p>used to remove white spaces</p>
+    <pre>
+        let str7="   bindhu    "
+var res7= str7.trim()
+console.group(res7.length)
+console.log(res7);
+console.group(res7.length)
+    </pre>
+    <hr>
+    <h3>slice</h3>
+    <p>used to extract data, it will not modify the original</p>
+    <pre>
+    //slice
+    //1. array method
+    var str8=["hi","hello","bye","goodbye","why","where"]
+                // 0     1       2      3        4     5
+    const res8=str8.slice(1,3)
+    console.log(res8)
+    
+    //2. not array
+         var str9="bindhu,bin,blink,bank"
+         const res9=str9.slice(0,4)
+         console.log(res9)
+    
+    // 3 reverse
+        var str10="bindhu,bin,blink,bank"
+        const res10=str10.slice(0,-2)
+        console.log(res10)
+</pre>
+<hr>
+    <h3>splice</h3>
+    <p>used to extract and add the elements and it
+        will modify original</p>
+    <p>if we put any (1,4,"dummy") sting with splice then original
+        string will changed with dummy in the place of (1,4)
+    </p>
+    <pre>
+    //splice
+var str11=["hi","hello","bye","goodbye","why","where"]
+            // 0     1       2      3        4     5
+const res11=str11.splice(1,3)
+console.log(res11)
+
+//2.
+var str12=["hi","hello","bye","goodbye","why","where"]
+            // 0     1       2      3        4     5
+const res12=str12.splice(1,4,"dummy")
+console.log(res12);
+console.log(str12)
+</pre>
+<hr>
+    <h3>concatenation</h3>
+    <p>to add to strings</p>
+    <pre>
+    var str13="apple"
+    var str14="orange"
+    var str15=str13.concat(" ",str14)
+    var str15=str13.concat(str14)
+    console.log(str15);
+ </pre>
+ <hr>
+    <h3>replace</h3>
+    <p>replaces only the first string</p>
+    <pre>
+    let str16="welocme everyone"
+    const res16=str16.replace("everyone","anyone");
+    console.log(res16);
+ </pre>
+ <hr>
+    <h3>replaceall</h3>
+    <p>replaces all the same string in sentence</p>
+    <pre>
+    var str17=" I am from India and India is famous for its culture "
+    var res17=str17.replaceAll("is", "was")
+    console.log("res17");
+ </pre>
+ <hr>
+    <h3>tolowercase</h3>
+    <p>conversts uppercase to lowercase</p>
+    <pre>
+   var str18="BINDHU"
+    var res18=str18.toLowerCase()
+    console.log(res18)
+</pre>
+<hr>
+    <h3>touppercase</h3>
+    <p>converts lowercase to uppercase</p>
+    <pre>
+    var str18="bindhu"
+    var res18=str18.toUpperCase()
+    console.log(res18)
+    
+ </pre>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
